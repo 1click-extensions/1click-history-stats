@@ -1,0 +1,7 @@
+{
+  "browsing_statistics" : {"message": "Browsing statistics" },
+  "browser_action": {"message": "Open history statistics" },
+  "ext_desc": {"message": "Watch your browsing statistics per site" },
+  "ext_name": {"message": "1Click Browsing Statistics" }
+}
+

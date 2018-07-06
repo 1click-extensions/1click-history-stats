@@ -1,0 +1,19 @@
+span.time {
+    padding-left: 10px;
+    float: right;
+}
+.entry:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+}
+.entry {
+    padding: 7px 7px;
+    font-size: 18px;
+}
+.entry:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.main {
+    min-width: 450px;
+}
