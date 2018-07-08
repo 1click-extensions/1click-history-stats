@@ -4,6 +4,7 @@
   "permissions_grant" : {"message": "הענק הרשאות" },
   "permissions_cant" : {"message": "ללא הרשאות לא נוכל לשמור סטטיסטיקות" },
   "no_data" : {"message": "אין מידע... עדיין" },
+  "since" : {"message": "סטטיסטיקות מאז" },
   "browser_action": {"message": "פתח סטטיסטיקת גלישה" },
   "ext_desc": {"message": "צפה בסטטיסטיקת הגלישה באתרים שונים בלחיצה אחת" },
   "ext_name": {"message": "סטטיסטיקת גלישה בלחיצה אחת" }

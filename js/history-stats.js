@@ -24,10 +24,10 @@ function addStats(){
     $('body').removeClass('no-permissions');
     $('h2').text(chrome.i18n.getMessage('browsing_statistics'));
     chrome.runtime.sendMessage({action: "getStats"}, function(data){
-
+        let since = new Date(Number(data.startDate)),
+            sinceStr =  [since.getDate(), (since.getMonth() + 1), since.getFullYear()].join('/');
         $('.times').empty();
-        $('.time').append('<div>activeUrl: ' + data.activeUrl + ' </div>');
-        $('.time').append('<div>lastUpdated: ' + data.lastUpdated + ' </div>');
+        
         let dataPerTime = {},   
             times = [];
         for(let url of Object.keys(data.stats)){
@@ -47,12 +47,24 @@ function addStats(){
 
         }
         if(!html){
-            html = '<div class="no-data">' + chrome.i18n.getMessage('no_data') + '</div>';
+            html = noData();
+        }
+        else{
+            $('.times').after('<div class="buttons"><button type="button" class="btn clear-history">' + chrome.i18n.getMessage('clear_stats') + '</button></div>');
+            $('.clear-history').click(function(){
+                chrome.runtime.sendMessage({action: "clearStats"}, function(){
+                    $('.times').html(noData());
+                });
+            });
         }
         $('.times').html(html);
+        $('.times').prepend('<div>' + chrome.i18n.getMessage('since') + ': ' + sinceStr + ' </div>');
     });
 }
 
+function noData(){
+    return '<div class="no-data">' + chrome.i18n.getMessage('no_data') + '</div>';
+}
 function addWatch(){
     let current = localStorage.getItem('watches');
     current = current ? Number(current) : 0;

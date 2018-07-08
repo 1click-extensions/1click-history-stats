@@ -30,6 +30,7 @@ function getEntries(){
 }
 
 function addEntry(){
+  addStartDate();
   if(activeUrl){
     addEntryTouUrl(activeUrl);
   }
@@ -73,7 +74,17 @@ function startWatching(tab){
 function stopWatching(){
   activeUrl = null;
   lastUpdated = null;
-  console.log('stopWatching');
+  //console.log('stopWatching');
+}
+
+function addStartDate(){
+  if(!getStartDate()){
+    localStorage.setItem('startDate', new Date().getTime());
+  }
+  //console.log('stopWatching');
+}
+function getStartDate(){
+  return localStorage.getItem('startDate');
 }
 
 chrome.tabs.onCreated.addListener(function(tab){
@@ -104,7 +115,12 @@ startWatchingActive();
 chrome.runtime.onMessage.addListener(function (data, sender, callback) {
   //console.log(data)
   if("getStats" == data.action ){
-    callback({stats:allUrls, lastUpdated:lastUpdated,activeUrl:activeUrl});
+    callback({stats:allUrls, startDate:getStartDate()});
+  }
+  if("clearStats" == data.action ){
+    allUrls = {};
+    saveEntries(allUrls);
+    callback(true);
   }
   
   
