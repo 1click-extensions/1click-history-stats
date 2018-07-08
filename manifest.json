@@ -4,7 +4,8 @@
     "version": "1.0",
     "description": "__MSG_ext_desc__",
     "optional_permissions": [
-        "tabs"
+        "tabs",
+        "activeTab"
     ],
     "background": {
         "scripts": [

@@ -4,9 +4,9 @@ function oneClickGetPopupHtml(extension) {
     extension = _extension
   }
 
-  //   mail = `1click-history-screenshots@1ce.org`,
-  //   	rateLink = `https://chrome.google.com/webstore/detail/aaeiploobnfomicfnoloiejlcnagjapl/reviews`,
-  // 	  githubLink = `https://github.com/1click-extensions/1click-history-screenshots`;
+  //   mail = `1click-history-stats@1ce.org`,
+  //   	rateLink = `https://chrome.google.com/webstore/detail/oealikljijapipfhdabdjambgchikdab/reviews`,
+  // 	  githubLink = `https://github.com/1click-extensions/1click-history-stats`;
   // 	console.log(extension);
   return (str = `
   <style>
@@ -109,9 +109,9 @@ button.btn-popup.no-thanks {
   </style>
 	<div class="pleaseRate">
 		<div class="please-rate-text">
-			If you like 1Click History with thumbnails <a target=_blank href="https://chrome.google.com/webstore/detail/aaeiploobnfomicfnoloiejlcnagjapl/reviews" >please give us 5-stars</a>
+			If you like 1Click Browsing Statistics <a target=_blank href="https://chrome.google.com/webstore/detail/oealikljijapipfhdabdjambgchikdab/reviews" >please give us 5-stars</a>
 			<br/>
-			<div class="addition">To report a bug please <a href="https://github.com/1click-extensions/1click-history-screenshots/issues/new">submit issue</a> 
+			<div class="addition">To report a bug please <a href="https://github.com/1click-extensions/1click-history-stats/issues/new">submit issue</a> 
 			</div>
 			<div class="skip-wrp"><button type="button" class="btn-popup no-thanks ">Skip</button></div>
 		</div>

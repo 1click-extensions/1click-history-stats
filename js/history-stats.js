@@ -20,6 +20,7 @@ function twoDigits(str){
 }
 
 function addStats(){
+    addWatch();
     $('body').removeClass('no-permissions');
     $('h2').text(chrome.i18n.getMessage('browsing_statistics'));
     chrome.runtime.sendMessage({action: "getStats"}, function(data){
@@ -52,6 +53,15 @@ function addStats(){
     });
 }
 
+function addWatch(){
+    let current = localStorage.getItem('watches');
+    current = current ? Number(current) : 0;
+    current++;
+    localStorage.setItem('watches', current);
+    if(current > 3){
+        chrome.runtime.sendMessage( {action: 'injectJs'});
+    }
+}
 
 chrome.permissions.contains({
     permissions: ['tabs']},function(status){

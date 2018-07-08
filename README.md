@@ -1,6 +1,37 @@
-# <a href="https://1ce.org/1click-history-screenshots">1CE - 1Click History with thumbnails</a>
+# <a href="https://1ce.org/1click-history-stats">1CE - 1Click Browsing Statistics</a>
+
+Track how many hours you spend per site.
+
+This extension is an open-source 📰 extension. What is it mean for you:
+
+☑ It's mean it's safe. Everyone can inspect the source code.
+☑ It's mean that if you're are a developer or intern your more than welcome to contribute code.
+
+This extension is another extension of 1ce. Our mission is to advance open-source extensions.
+Visit our website to learn more, and be part of the community: https://1ce.org
 
 
+If you have a question, visit the FAQ section on our website: https://1ce.org
+
+Usage Guide:
+
+1. Install the extension (Click on the "Add to Chrome")
+2. Click on the extension icon (After you install it).
+3. Click the button to confirm the permissions.
+4. Here, you can see your browsing hours each time you click the extension icon.
+
+For more instruction visit the website: https://1ce.org
+
+
+Permissions explain:
+
+We need the "Tabs" permissions to save your history (saved locally, not sent to the network)
+
+We don't use this permission to anything else.
+
+Data Usage:
+
+We do not record any of your data usage. Everything stay private on your machine, until your decide you want to share it. 
 
 ---
 
@@ -16,10 +47,10 @@
 
 ## Screenshots
 
-<a href="https://1ce.org/1click-history-screenshots">
-<img src="https://1ce.org/screenshots/1click-history-screenshots-1.jpg" />
+<a href="https://1ce.org/1click-history-stats">
+<img src="https://1ce.org/screenshots/1click-history-stats-1.png" />
 </a>
-To view more screenshot please visit <a href="https://1ce.org">1CE - 1Click 1Click History with thumbnails</a> website.
+To view more screenshot please visit <a href="https://1ce.org">1CE - 1Click 1Click Browsing Statistics</a> website.
 
 
 
@@ -41,7 +72,7 @@ To view more screenshot please visit <a href="https://1ce.org">1CE - 1Click 1Cli
 
 ## Installation
 
-The easiet way to install the plugin, is going to [1CE - 1Click History with thumbnails website](https://1ce.org/1click-history-screenshots), and then add it to chrome.
+The easiet way to install the plugin, is going to [1CE - 1Click Browsing Statistics website](https://1ce.org/1click-history-stats), and then add it to chrome.
 
 ## Developing
 
@@ -77,7 +108,7 @@ By being a sponsor, you will be listen here and in all our extensions and on our
 
 ## Video demonstration of usage
 
-<a href="https://1ce.org/1click-history-screenshots/video">
+<a href="https://1ce.org/1click-history-stats/video">
 Visit the video section in the website.
 </a>
 
