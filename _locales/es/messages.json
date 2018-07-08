@@ -1,12 +1,11 @@
 {
-  "page_title": {"message": "History with thumbnails - 1Click extentions" },
-  "h1_title": {"message": "History with thumbnails" },
-  "localy": {"message": "Screenshots and sites history saved locally." },
-  "no_history": {"message": "No history... yet" },
-  "delete_text": {"message": "To delete history use" },
-  "delete_text_link": {"message": "this page" },
-  "browser_action": {"message": "Open history" },
-  "ext_desc": {"message": "Watch your history with thumbnails of the page you visited" },
-  "ext_name": {"message": "1Click History with thumbnails" }
+  "browsing_statistics" : {"message": "Browsing statistics" },
+  "permissions_explain" : {"message": "We need permissions to record your statistics" },
+  "permissions_grant" : {"message": "Grant permissions" },
+  "permissions_cant" : {"message": "Can't start recording statistics without permissions" },
+  "no_data" : {"message": "No data... yet" },
+  "browser_action": {"message": "Open history statistics" },
+  "ext_desc": {"message": "Watch your browsing statistics per site" },
+  "ext_name": {"message": "1Click Browsing Statistics" }
 }
 

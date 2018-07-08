@@ -1,3 +1,14 @@
+.no-permissions h2{
+	display: none;
+	
+}
+.no-permissions .times{
+	font-size: 16px;
+	border: 2px solid gold;
+	margin: 10px;
+	padding: 13px;
+
+}
 span.time {
     padding-left: 10px;
     float: right;
@@ -15,5 +26,14 @@ span.time {
     clear: both;
 }
 .main {
-    min-width: 450px;
+    width: 550px;
+}
+.no-permissions .main {
+    width: 350px;
+}
+.no-permissions .explain {
+    padding-bottom: 20px;
+}
+.no-data {
+    font-size: 22px;
 }

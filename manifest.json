@@ -3,12 +3,8 @@
     "short_name": "__MSG_ext_name__",
     "version": "1.0",
     "description": "__MSG_ext_desc__",
-    "permissions": [
-        "tabs",
-        "history",
-        "storage",
-        "windows",
-        "<all_urls>"
+    "optional_permissions": [
+        "tabs"
     ],
     "background": {
         "scripts": [

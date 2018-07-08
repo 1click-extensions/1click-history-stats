@@ -1,7 +1,7 @@
 
 setInterval(checkBrowserFocus, 1000);  
 activeUrl = null, lastUpdated = null;
-allUrls = {};
+allUrls = getEntries();
 function checkBrowserFocus(){
     addEntry();
     chrome.windows.getCurrent(function(browser){
@@ -12,6 +12,21 @@ function checkBrowserFocus(){
 
     })
 
+}
+
+function saveEntries(allUrls){
+  localStorage.setItem('historyStats', JSON.stringify(allUrls));
+}
+
+function getEntries(){
+  let items;
+  try{
+    items = JSON.parse(localStorage.getItem('historyStats'));
+  }
+  catch(e){
+    //items = {};
+  }
+  return items ? items : {};
 }
 
 function addEntry(){
@@ -27,6 +42,7 @@ function addEntryTouUrl(activeUrlToAdd){
   let now = new Date().getTime();
   allUrls[activeUrlToAdd] += now - lastUpdated ;
   lastUpdated = now;
+  saveEntries(allUrls);
 }
 
 function startWatchingActive(){

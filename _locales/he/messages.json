@@ -1,11 +1,11 @@
 {
-  "page_title": {"message": "היסטוריה עם תמונות | תוספים בלחיצה אחת" },
-  "h1_title": {"message": "היסטוריה עם תמונות" },
-  "localy": {"message": "תמונות האתרים וההיסטוריה נשמרים באופן מקומי" },
-  "no_history": {"message": "אין פריטים עדיין" },
-  "delete_text": {"message": "למחיקת ההיסטוריה השתמש" },
-  "delete_text_link": {"message": "בדף הזה" },
-  "browser_action": {"message": "פתח היסטוריה" },
-  "ext_desc": {"message": "ראה את כל ההיסטוריה שלך עם תמונות של האתר" },
-  "ext_name": {"message": "היסטוריה עם תמונות בלחיצה אחת" }
+  "browsing_statistics" : {"message": "סטטיסטיקת גלישה" },
+  "permissions_explain" : {"message": "אנחנו זקוקים להרשאות על מנת לשמור סטטיסטיקות" },
+  "permissions_grant" : {"message": "הענק הרשאות" },
+  "permissions_cant" : {"message": "ללא הרשאות לא נוכל לשמור סטטיסטיקות" },
+  "no_data" : {"message": "אין מידע... עדיין" },
+  "browser_action": {"message": "פתח סטטיסטיקת גלישה" },
+  "ext_desc": {"message": "צפה בסטטיסטיקת הגלישה באתרים שונים בלחיצה אחת" },
+  "ext_name": {"message": "סטטיסטיקת גלישה בלחיצה אחת" }
 }
+
